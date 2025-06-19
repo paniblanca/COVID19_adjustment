@@ -49,6 +49,11 @@ The function returns a list with:
 * final_df: Optimal df used during wave that satisfies threshold.
 * results_df: Data frame with percentage of residuals outside CI for each df tested.
 
+For the example given (Lisbon), the COVID-19 wave window needs to be adjusted for 16 df while the rest of the time series can be adjusted with the standard 8 df per year. 
+![Regional application of the df criteria applied in the COVID-19 wave of Lisbon (Portugal). This figure shows the percentage of mortality data waves outside the 2.5th and 97.5th centiles of the residuals. The red line depicts 8 df (standard option) and the blue line the df applied in the COVID-19 wave to meet the 5% threshold criteria (df = 16).](https://drive.google.com/drive/u/1/folders/1gnxGxQjpbFhLvjijP05FUZbkSauIQ-9u)
+
+
+
 # Reference: 
 Paniello-Castillo B, Quijal-Zamorano M, Gallo E, Basagaña X, Ballester J. Regional changes in temperature-related mortality before and during the COVID-19 pandemic: a continental modelling analysis in 805 European regions. Environ Res [Internet]. 2025;278(121697):121697. Available from: http://dx.doi.org/10.1016/j.envres.2025.121697
 
