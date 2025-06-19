@@ -18,8 +18,9 @@ What you need to specify in the function (format and explanation).
 * datatable: Data frame. Input data for a **single region**, containing variables `mort`, `temp`, and `date`.
 * threshold: Numeric. Acceptable percentage of out-of-bound residuals during the wave. We imposed that each window had a maximum of 5 % of mortality residual values outside the 2.5–97.5 residual threshold range. 
 
-```
-Example for the case of the region of Lisbon (code provided as an example)
+```r
+**Example usage (Lisbon region):**
+
   df8 = 8
   dfmax = 52
   wave_date1 = as.Date("2020-10-29")
