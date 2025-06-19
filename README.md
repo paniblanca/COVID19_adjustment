@@ -11,14 +11,14 @@ The function is designed to work with weekly data, as used in the provided examp
 
 ### Parameters 
 What you need to specify in the function (format and explanation). 
-* <ins>df8<ins>: Numeric. Usually the standard choice of 8 df per year
-* <ins>dfmax<ins>: Numeric. Maximum df allowed for testing during the wave. The maximum will depend on the data resolution (52 df for weekly data).
-* <ins>wave_date1<ins>: Date. Start date of the adjusting window. 
-* <ins>wave_date2<ins>: Date. End date of the adjusting window. 
-* <ins>crossbasis_fun<ins>: Character. Spline function for the crossbasis. Either natural cubic spline (*ns*) or B-spline (*bs*).
-* <ins>lag_fun<ins>: Character. Internal spline function for generating the lad matrix. Here we use *integer* but it could also be *poly*, *strata*, *thr* or *lin*.
-* <ins>datatable<ins>: Data frame. Input data for a **single region**, containing variables `location` `mort`, `temp`, and `date`, among others (see Input Data Requirements section).
-* <ins>threshold<ins>: Numeric. Acceptable percentage of out-of-bound residuals during the wave. We imposed that each window had a maximum of 5 % of mortality residual values outside the 2.5–97.5 residual threshold range. 
+* <ins>df8</ins>: Numeric. Usually the standard choice of 8 df per year
+* <ins>dfmax</ins>: Numeric. Maximum df allowed for testing during the wave. The maximum will depend on the data resolution (52 df for weekly data).
+* <ins>wave_date1</ins>: Date. Start date of the adjusting window. 
+* <ins>wave_date2</ins>: Date. End date of the adjusting window. 
+* <ins>crossbasis_fun</ins>: Character. Spline function for the crossbasis. Either natural cubic spline (*ns*) or B-spline (*bs*).
+* <ins>lag_fun</ins>: Character. Internal spline function for generating the lad matrix. Here we use *integer* but it could also be *poly*, *strata*, *thr* or *lin*.
+* <ins>datatable</ins>: Data frame. Input data for a **single region**, containing variables `location` `mort`, `temp`, and `date`, among others (see Input Data Requirements section).
+* <ins>threshold</ins>: Numeric. Acceptable percentage of out-of-bound residuals during the wave. We imposed that each window had a maximum of 5 % of mortality residual values outside the 2.5–97.5 residual threshold range. 
 
 ```r
 Example usage (Lisbon region):
@@ -34,12 +34,12 @@ Example usage (Lisbon region):
 ```
 ###  Input Data Requirements (datatable)
 The input dataframe must include the following columns:
-* <ins>location<ins>: region identifier (only one region per function call is allowed)
-* <ins>year<ins>: year
-* <ins>woy<ins>: week of the year
-* <ins>mortality<ins>: daily or weekly all-cause mortality counts
-* <ins>temperature<ins>: corresponding temperature values
-* <ins>date<ins>: data in Date format
+* <ins>location</ins>: region identifier (only one region per function call is allowed)
+* <ins>year</ins>: year
+* <ins>woy</ins>: week of the year
+* <ins>mortality</ins>: daily or weekly all-cause mortality counts
+* <ins>temperature</ins>: corresponding temperature values
+* <ins>date</ins>: data in Date format
   
 Important:
 The calibration dataset (datatable) should extend beyond the last calibration date by MAX_LAG * 7 days (e.g., 21 days for a maximum lag of 3 weeks). This is necessary to properly model lagged temperature effects in the cross-basis.
