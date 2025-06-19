@@ -6,7 +6,7 @@ The residuals were calculated by subtracting the all-cause mortality counts of t
 Departing from the standard choice of 8 d.f. per year, we applied equally-spaced knots within these time windows, increasing the d.f. as necessary to reduce the negative-positive-negative mortality residuals below a defined threshold. We imposed that each COVID-19 wave window had a maximum of 5 % of mortality residual values outside the 2.5–97.5 residual threshold range.
 
 ## Getting Started
-The function necessitates from the specification of 7 parameters. Moreover, the input of data also requires from a specific structure. 
+The function necessitates from the specification of 8 parameters. Moreover, the input of data also requires from a specific structure. 
 The function is designed to work with weekly data, as used in the provided example. However, it can be easily adapted for daily data or other temporal resolutions.
 
 ### Parameters 
