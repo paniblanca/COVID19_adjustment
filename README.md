@@ -13,7 +13,7 @@ What you need to specify in the function (format and explanation).
 * df8: Numeric. Usually the standard choice of 8 df per year
 * dfmax: Numeric. Maximum df allowed for testing during the wave. The maximum will depend on the data resolution (52 df for weekly data).
 * wave_date1: Date. Start date of the adjusting window. 
-* wave_date2 = Date. End date of the adjusting window. 
+* wave_date2: Date. End date of the adjusting window. 
 * crossbasis_fun: Character. Spline function for the crossbasis. Either natural cubic spline (ns) or B-spline (bs).
 * datatable: Data frame. Input data for a **single region**, containing variables `mort`, `temp`, and `date`.
 * threshold: Numeric. Acceptable percentage of out-of-bound residuals during the wave. We imposed that each window had a maximum of 5 % of mortality residual values outside the 2.5–97.5 residual threshold range. 
