@@ -11,9 +11,9 @@ The function is designed to work with weekly data, as used in the provided examp
 
 ### Parameters 
 What you need to specify in the function (format and explanation). 
-* df8: Numeric. Usually the standard choice of 8 df per year
-* dfmax: Numeric. Maximum df allowed for testing during the wave. The maximum will depend on the data resolution (52 df for weekly data).
-* wave_date1: Date. Start date of the adjusting window. 
+* _df8_: Numeric. Usually the standard choice of 8 df per year
+* _dfmax_: Numeric. Maximum df allowed for testing during the wave. The maximum will depend on the data resolution (52 df for weekly data).
+* _wave_date1_: Date. Start date of the adjusting window. 
 * wave_date2: Date. End date of the adjusting window. 
 * crossbasis_fun: Character. Spline function for the crossbasis. Either natural cubic spline (*ns*) or B-spline (*bs*).
 * lag_fun: Character. Internal spline function for generating the lad matrix. Here we use *integer* but it could also be *poly*, *strata*, *thr* or *lin*.
