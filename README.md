@@ -50,8 +50,8 @@ The function returns a list with:
 * results_df: Data frame with percentage of residuals outside CI for each df tested.
 
 For the example given (Lisbon), the COVID-19 wave window needs to be adjusted for 16 df while the rest of the time series can be adjusted with the standard 8 df per year. 
-![Regional application of the df criteria applied in the COVID-19 wave of Lisbon (Portugal). This figure shows the percentage of mortality data waves outside the 2.5th and 97.5th centiles of the residuals. The red line depicts 8 df (standard option) and the blue line the df applied in the COVID-19 wave to meet the 5% threshold criteria (df = 16).](https://drive.google.com/drive/u/1/folders/1gnxGxQjpbFhLvjijP05FUZbkSauIQ-9u)
 
+![Regional application of the df criteria applied in the COVID-19 wave of Lisbon (Portugal). This figure shows the percentage of mortality data waves outside the 2.5th and 97.5th centiles of the residuals. The red line depicts 8 df (standard option) and the blue line the df applied in the COVID-19 wave to meet the 5% threshold criteria (df = 16).](Example_df_lisbon.png)
 
 
 # Reference: 
