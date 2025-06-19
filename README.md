@@ -21,7 +21,7 @@ What you need to specify in the function (format and explanation).
 * <ins>threshold</ins>: Numeric. Acceptable percentage of out-of-bound residuals during the wave. We imposed that each window had a maximum of 5 % of mortality residual values outside the 2.5–97.5 residual threshold range. 
 
 ```r
-Example usage (Lisbon region):
+Example usage (Region of Lisbon, Portugal):
 
   df8 = 8
   dfmax = 52
